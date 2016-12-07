@@ -53,13 +53,13 @@ label {
   line-height: 1.5;
 }
 
-.rate-value, .pitch-value {
+.rate-value, .pitch-value, .volumn-value {
   float: right;
   width: 5%;
   line-height: 1.5;
 }
 
-#rate, #pitch {
+#rate, #pitch, #volumn {
   float: right;
   width: 81%;
 }

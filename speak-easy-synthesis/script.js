@@ -8,6 +8,8 @@ var pitch = document.querySelector('#pitch');
 var pitchValue = document.querySelector('.pitch-value');
 var rate = document.querySelector('#rate');
 var rateValue = document.querySelector('.rate-value');
+var volumn = document.querySelector('#volumn');
+var volumnValue = document.querySelector('.volumn-value');
 
 var voices = [];
 
@@ -47,6 +49,7 @@ inputForm.onsubmit = function(event) {
   }
   utterThis.pitch = pitch.value;
   utterThis.rate = rate.value;
+  utterThis.volume = volumn.value;
   synth.speak(utterThis);
 
   utterThis.onpause = function(event) {
@@ -64,4 +67,8 @@ pitch.onchange = function() {
 
 rate.onchange = function() {
   rateValue.textContent = rate.value;
+}
+
+volumn.onchange = function() {
+  volumnValue.textContent = volumn.value;
 }
