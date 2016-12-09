@@ -47,6 +47,8 @@
     speechSynthesis.onvoiceschanged = populateVoiceList;
   }
 
+  volumeValue.textContent = volume.defaultValue;
+
   inputForm.onsubmit = function(event) {
     event.preventDefault();
 
